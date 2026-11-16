@@ -119,6 +119,30 @@
   }
   .bullets li b{ color:var(--parchment); font-weight:600; }
 
+  /* ---------- VALUE STACK ---------- */
+  .stack{ max-width:520px; margin:48px auto 0; padding:0 24px; }
+  .stack-title{ font-family:'Fraunces', serif; font-size:24px; text-align:center; margin-bottom:18px; color:var(--parchment); }
+  .stack-list{ list-style:none; }
+  .stack-list li{
+    display:flex; justify-content:space-between; gap:16px; align-items:flex-start;
+    padding:16px 0; border-top:1px solid var(--line);
+    font-size:14.5px; color:var(--parchment-dim);
+  }
+  .stack-list li:last-child{ border-bottom:1px solid var(--line); }
+  .stack-list .s-name b{ color:var(--parchment); font-weight:600; }
+  .stack-list .s-val{ flex-shrink:0; color:var(--brass); font-weight:600; font-size:13.5px; padding-top:1px; }
+  .stack-total{ margin-top:18px; background:var(--card); border:1px solid var(--line); border-radius:4px; padding:16px 20px; }
+  .stack-total .row{ display:flex; justify-content:space-between; font-size:15px; color:var(--parchment-dim); padding:4px 0; }
+  .stack-total .strike{ text-decoration:line-through; }
+  .stack-total .yours{ color:var(--brass-bright); font-family:'Fraunces', serif; font-weight:700; font-size:20px; }
+  .guarantee{
+    max-width:472px; margin:28px auto 0; padding:20px 22px;
+    border:1px solid var(--brass); border-radius:4px; text-align:center;
+  }
+  .guarantee .g-title{ font-family:'Fraunces', serif; font-weight:700; color:var(--brass-bright); font-size:18px; margin-bottom:6px; }
+  .guarantee p{ font-size:14.5px; color:var(--parchment-dim); }
+  .cta-note a{ color:var(--brass-bright); }
+
   /* ---------- LEGAL / FOOTER ---------- */
   footer{
     max-width:460px; margin:44px auto 0; padding:20px 24px 40px;
@@ -141,8 +165,8 @@
 </div>
 
 <div class="hero">
-  <h1 class="headline">Stop networking <em>alone.</em><br>Get in the room for <a href="https://buy.stripe.com/3cI4gy9bTbk6bTN954g3608" target="_blank" rel="noopener" class="price-link">$25/month</a>.</h1>
-  <p class="subhead">The Front Yard is the entry room of <b>Building Better Rooms</b> — education, accountability, and people already doing what you're trying to do. No event required, no wait list.</p>
+  <h1 class="headline">Your first aligned connection <em>this Thursday.</em><br>Founding price <a href="https://buy.stripe.com/3cI4gy9bTbk6bTN954g3608" target="_blank" rel="noopener" class="price-link">$25/month</a>.</h1>
+  <p class="subhead">The Front Yard is the entry room of <b>Building Better Rooms</b>. Meet 5–7 builders every week, get a <b>warm intro from Omar</b> each month, and walk away with the scripts to turn every connection into a next step. No cold pitching.</p>
 </div>
 
 <div class="hero-image">
@@ -153,18 +177,37 @@
 <div class="cta-block">
   <a class="door-cta" href="https://buy.stripe.com/3cI4gy9bTbk6bTN954g3608" target="_blank" rel="noopener">
     Join the Front Yard — $25/mo
-    <span class="cta-sub">Instant access · Cancel anytime</span>
+    <span class="cta-sub">Founding price · Cancel anytime</span>
   </a>
-  <p class="cta-note">No contract. No calls. Leave whenever you want.</p>
+  <p class="cta-note">Founding price is $25/mo for the first 50 members. After that it goes to $47/mo.</p>
 </div>
 
-<div class="bullets">
-  <ul>
-    <li><span class="check">✓</span><span><b>New Faces, New Places.</b> 45 minutes, 5–7 Zoom breakout conversations — you walk out with at least one aligned connection, not just a stack of names.</span></li>
-    <li><span class="check">✓</span><span><b>Education.</b> The actual mechanics of networking, taught plain — not theory.</span></li>
-    <li><span class="check">✓</span><span><b>Equipping.</b> The tools and scripts you walk out of the room with.</span></li>
-    <li><span class="check">✓</span><span><b>Execution.</b> Accountability so what you learn actually turns into action.</span></li>
+<div class="stack">
+  <h2 class="stack-title">What you get every month</h2>
+  <ul class="stack-list">
+    <li><span class="s-name"><b>New Faces New Places, weekly.</b> 45 minutes, 5–7 Zoom breakout conversations, Thursdays at 12pm ET. You leave with at least one aligned connection, not just a stack of names.</span><span class="s-val">$100/mo</span></li>
+    <li><span class="s-name"><b>The Warm Intro.</b> Omar personally connects you to one person in his network each month. Warm, not cold. Capped at 50 members.</span><span class="s-val">$150/mo</span></li>
+    <li><span class="s-name"><b>The Room Entry Kit.</b> Your 30-second intro, 3 openers, and follow-up scripts so you never freeze at "what do you do?"</span><span class="s-val">$47</span></li>
+    <li><span class="s-name"><b>The Member Directory.</b> Who's in the yard, what they do, and who they want to meet.</span><span class="s-val">$50/mo</span></li>
+    <li><span class="s-name"><b>7-Day Follow-Up Challenge.</b> Turn every new connection into a next step, with accountability.</span><span class="s-val">$47</span></li>
   </ul>
+  <div class="stack-total">
+    <div class="row"><span>Total value</span><span class="strike">$394</span></div>
+    <div class="row yours"><span>Your price today</span><span>$25/mo</span></div>
+  </div>
+</div>
+
+<div class="guarantee">
+  <div class="g-title">The 30-day connection guarantee</div>
+  <p>Make at least one aligned connection in your first 30 days, or your next month is on us.</p>
+</div>
+
+<div class="cta-block" style="margin-top:28px;">
+  <a class="door-cta" href="https://buy.stripe.com/3cI4gy9bTbk6bTN954g3608" target="_blank" rel="noopener">
+    Join the Front Yard — $25/mo
+    <span class="cta-sub">Founding price · First 50 members</span>
+  </a>
+  <p class="cta-note">Not ready to pay? Grab the free <a href="kit.html">Room Entry Kit</a> first.</p>
 </div>
 
 <footer>
